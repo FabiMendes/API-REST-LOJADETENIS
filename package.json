@@ -1,0 +1,33 @@
+{
+  "name": "api-rest-venda-de-roupa",
+  "version": "1.0.0",
+  "description": "Loja de Tênis ",
+  "main": "Index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FabiMendes/PWIIETEC.git"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "ETEC",
+    "PW2",
+    "BARUERI",
+    "NODE",
+    "JS"
+  ],
+  "author": "Fabiana Neri Mendes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabiMendes/PWIIETEC.git"
+  },
+  "homepage": "https://github.com/FabiMendes/PWIIETEC.git",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.8"
+  }
+}
