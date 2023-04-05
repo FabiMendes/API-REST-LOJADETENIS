@@ -7,13 +7,14 @@ Linha nº 11 = Usuario do banco
 Linha nº 12 = Senha do banco
 */
 const connection = new Sequelize(
-    'bd_lojatenis_api2', 
+    'bd_lojatenis_api', 
     'root',
     '',
     {
         host:'localhost',
         dialect:'mysql',
-        timezone: '-03:00'
+        timezone: '-03:00',
+        port: 3307
     }
 );
 

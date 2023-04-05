@@ -8,10 +8,10 @@ const connection = require('../database/database');
 const modelCliente = connection.define(
     'tbl_Cliente',
     {
-        cpf_cliente:{
+        cod_cliente:{
             type: Sequelize.INTEGER,
-            primaryKey: true,
-            autoIncrement:true
+            primaryKey: true, 
+            autoIncrement: true
         },
         nome_cliente: {
             type: Sequelize.STRING(50),
@@ -19,7 +19,6 @@ const modelCliente = connection.define(
         },
         celular_cliente:{
             type: Sequelize.DECIMAL(20),
-            allowNull: true
         },
         email_cliente:{
             type: Sequelize.STRING(30),

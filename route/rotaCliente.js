@@ -8,10 +8,10 @@ const router = express.Router();
 
 router.post('/cadastrarCliente', (req, res)=>{
     console.log(req.body);
-    let {nome_cliente} = req.body;
+    let {nome_cliente,celular_cliente,email_cliente,cod_cliente} = req.body;
     modelCliente.create(
 
-        {nome_cliente}
+        {nome_cliente,celular_cliente,email_cliente,cod_cliente}
     ).then(
         ()=>{
             return res.status(201).json({
