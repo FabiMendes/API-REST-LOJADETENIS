@@ -56,6 +56,7 @@ router.get('/listarCliente', (req, res)=>{
         );
 })
 
+//LISTAR CLIENTE
 
 router.get('/listarClienteNOME/:nome_Cliente', (req, res)=>{
 
@@ -83,14 +84,14 @@ router.get('/listarClienteNOME/:nome_Cliente', (req, res)=>{
 
 });
 
-
+//ALTERAR CLIENTE
 router.put('/alterarCliente', (req, res)=>{
 
-    const {cod_Cliente, nome_Cliente} = req.body;
+    const {cod_cliente, nome_cliente} = req.body;
 
     modelCliente.update(
-        {nome_Cliente},
-        {where:{cod_Cliente}}
+        {nome_cliente},
+        {where:{cod_cliente}}
     ).then(
         ()=>{
             return res.status(200).json({
@@ -111,7 +112,7 @@ router.put('/alterarCliente', (req, res)=>{
 
 
 
-
+//EXCLUIR CLIENTE
 router.delete('/deletarCliente/:cod_Cliente', (req, res)=>{
 
 
@@ -142,12 +143,12 @@ router.delete('/deletarCliente/:cod_Cliente', (req, res)=>{
 
 
 
-router.get('/listarClientePK/:id_Cliente', (req, res)=>{
+router.get('/listarClientePK/:cod_cliente', (req, res)=>{
 
-    let {cod_Cliente} = req.params;
+    let {cod_cliente} = req.params;
 
 
-    modelCliente.findByPk(id_Cliente)
+    modelCliente.findByPk(cod_cliente)
     .then(
         (response)=>{
             return res.status(200).json({

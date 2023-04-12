@@ -30,3 +30,5 @@ const modelCliente = connection.define(
 //modelCliente.sync({force:true});
 
 module.exports = modelCliente;
+
+//aaaamendasmetestedeu

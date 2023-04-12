@@ -4,7 +4,6 @@ const routesCliente = require('./route/rotaCliente')
 const routesTenis = require('./route/rotaTenis')
 
 
-// const app = express();
 
 const app = express();
 
